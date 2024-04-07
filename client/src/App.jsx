@@ -1,10 +1,8 @@
-import { Button } from "./components/ui/button";
-import ThemeToggleButton from "./components/ThemeToggleButton";
+import Main from "./pages/log-sign/Main";
 function App() {
   return (
     <>
-      <Button>Heloo World</Button>
-      <ThemeToggleButton />
+      <Main />
     </>
   );
 }
