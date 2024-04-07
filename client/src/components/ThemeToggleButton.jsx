@@ -27,7 +27,7 @@ const ThemeToggleButton = () => {
   }, [isDarkMode]);
 
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center absolute top-2 left-3">
       <button
         className={`px-4 py-2 rounded focus:outline-none ${
           isDarkMode ? "bg-gray-800 text-white" : "bg-gray-200 text-gray-800"
