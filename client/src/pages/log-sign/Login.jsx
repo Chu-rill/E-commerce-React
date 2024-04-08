@@ -1,17 +1,23 @@
 import React, { useState } from "react";
 import { Button } from "../../components/ui/button";
+import SignError from "../../components/ui/SignError";
 
 function Login(props) {
   const [user, setUser] = useState("");
   const [pass, setPass] = useState("");
+  const [showPopover, setShowPopover] = useState(false);
 
   function auth() {
-    if (user === "" || pass === "") {
-      alert("Username and password are required");
+    if (user === "" || pass === "" || email === "") {
+      setShowPopover(true); // Show popover if fields are not filled
+    } else {
+      // Add your authentication logic here
     }
-    // Add your authentication logic here
   }
 
+  const closePopover = () => {
+    setShowPopover(false);
+  };
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 max-w-sm w-full">
@@ -36,6 +42,7 @@ function Login(props) {
         >
           Login
         </Button>
+        <SignError isOpen={showPopover} onClose={closePopover} />
         <div className="flex justify-center mt-2">
           <p className="text-sm">
             Don't have an account?{" "}
