@@ -10,26 +10,31 @@ function SignError({ isOpen, onClose }) {
             position: "fixed",
             top: "50%",
             left: "50%",
-            width: "400px",
-            height: "200px",
+            width: "450px",
+            height: "250px",
             transform: "translate(-50%, -50%)",
-            backgroundColor: "black",
-            border: "1px solid #ccc",
+            backgroundColor: "#3b82f6", // Matching blue color with the login component
+            // border: "1px solid #2563eb", // Matching border color with the login component
+            border: "3px solid white",
             padding: "10px",
-            borderRadius: "5px",
+            borderRadius: "25px",
             boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.1)",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
             zIndex: 9999, // Ensure it's above other elements
+            color: "#fff", // Text color
           }}
         >
           {/* <p>All fields must be filled</p> */}
-          <div style={{ marginBottom: "10px", color: "#fff" }}>
+          <div style={{ marginBottom: "10px", fontSize: "1.7rem" }}>
             All fields must be filled
           </div>
           <Button
             onClick={onClose}
             style={{
               background: "none",
-              color: "white",
+              color: "#fff", // Button text color
               border: "none",
               cursor: "pointer",
               position: "absolute",

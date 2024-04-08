@@ -20,19 +20,19 @@ function Login(props) {
   };
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 max-w-sm w-full">
-        <h2 className="text-lg mb-4 font-semibold text-center">Login</h2>
+      <div className="bg-blue-300 dark:bg-gray-800 rounded-lg shadow-md p-8 max-w-sm w-full">
+        <h2 className="text-2xl mb-4 font-semibold text-center">Login</h2>
         <input
           type="text"
           placeholder="Username"
-          className="w-full rounded-md px-3 py-2 mb-2 dark:bg-gray-200 dark:text-gray-800 focus:outline-none focus:ring focus:border-purple-600"
+          className="w-full rounded-md px-4 py-2 mb-4 dark:bg-gray-200 dark:text-gray-800 focus:outline-none focus:ring focus:border-purple-600"
           value={user}
           onChange={(e) => setUser(e.target.value)}
         />
         <input
           type="password"
           placeholder="Password"
-          className="w-full rounded-md px-3 py-2 mb-4 dark:bg-gray-200 dark:text-gray-800 focus:outline-none focus:ring focus:border-purple-600"
+          className="w-full rounded-md px-4 py-2 mb-4 dark:bg-gray-200 dark:text-gray-800 focus:outline-none focus:ring focus:border-purple-600"
           value={pass}
           onChange={(e) => setPass(e.target.value)}
         />
