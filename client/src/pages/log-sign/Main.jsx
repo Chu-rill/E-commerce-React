@@ -5,7 +5,7 @@ import SignUp from "./SignUp";
 function Main() {
   const [login, setLogin] = useState(true);
   return (
-    <div className="flex justify-center items-center pt-8">
+    <div className="flex justify-center items-center ">
       <ThemeToggleButton />
       {login ? <Login setLogin={setLogin} /> : <SignUp setLogin={setLogin} />}
     </div>
