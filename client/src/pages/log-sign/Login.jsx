@@ -10,18 +10,18 @@ function Login(props) {
     }
   }
   return (
-    <div className="w-52 bg-gray-200 rounded-xl shadow-lg shadow-black dark:shadow-gray-300 h-56 flex flex-col justify-around items-center">
+    <div className="w-64 bg-gray-200 rounded-xl shadow-lg shadow-black dark:shadow-gray-300 h-56 flex flex-col justify-around items-center">
       <input
         type="text"
         placeholder="Username"
-        className="w-[90%] rounded-md dark:text-black p-1 cursor-pointer"
+        className="w-[90%] rounded-md dark:text-black p-1 cursor-pointer focus:outline-purple-600"
         value={user}
         onChange={(e) => setUser(e.target.value)}
       />
       <input
         type="password"
         placeholder="Password"
-        className="w-[90%] rounded-md dark:text-black p-1 cursor-pointer"
+        className="w-[90%] rounded-md dark:text-black p-1 cursor-pointer focus:outline-purple-600"
         value={pass}
         onChange={(e) => setPass(e.target.value)}
       />
