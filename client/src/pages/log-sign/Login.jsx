@@ -7,6 +7,7 @@ function Login(props) {
   const [pass, setPass] = useState("");
   const [showPopover, setShowPopover] = useState(false);
 
+  // a basic function to check id there an empty input field
   function auth() {
     if (user === "" || pass === "" || email === "") {
       setShowPopover(true); // Show popover if fields are not filled
