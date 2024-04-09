@@ -13,9 +13,10 @@ function SignError({ isOpen, onClose }) {
             width: "450px",
             height: "250px",
             transform: "translate(-50%, -50%)",
-            backgroundColor: "#3b82f6", // Matching blue color with the login component
+            backgroundColor: "dimgrey", // Matching blue color with the login component
+            // backgroundColor: " color-mix(in srgb, #3b82f6,  transparent 10%)",
             // border: "1px solid #2563eb", // Matching border color with the login component
-            border: "3px solid white",
+            border: "3px solid black",
             padding: "10px",
             borderRadius: "25px",
             boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.1)",
