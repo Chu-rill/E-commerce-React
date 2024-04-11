@@ -9,7 +9,7 @@ function Login(props) {
 
   // a basic function to check id there an empty input field
   function auth() {
-    if (user === "" || pass === "" || email === "") {
+    if (user === "" || pass === "") {
       setShowPopover(true); // Show popover if fields are not filled
     } else {
       // Add your authentication logic here

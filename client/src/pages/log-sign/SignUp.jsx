@@ -1,18 +1,27 @@
 import React, { useState } from "react";
 import { Button } from "../../components/ui/button";
 import SignError from "../../components/ui/SignError";
+// import { useHistory } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 function SignUp(props) {
   const [user, setUser] = useState("");
   const [pass, setPass] = useState("");
   const [email, setEmail] = useState("");
   const [showPopover, setShowPopover] = useState(false);
+  // const history = useHistory();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   // a basic function to check id there an empty input field
   function auth() {
     if (user === "" || pass === "" || email === "") {
       setShowPopover(true); // Show popover if fields are not filled
     } else {
-      // Add your authentication logic here
+      // history.push("../Home/Home");
+      setIsLoggedIn(true);
+      if (isLoggedIn) {
+        return <Redirect to="../Home/Home" />;
+      }
     }
   }
 
