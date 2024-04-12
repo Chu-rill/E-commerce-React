@@ -1,18 +1,25 @@
 import React, { useState } from "react";
 import { Button } from "../../components/ui/button";
 import SignError from "../../components/ui/SignError";
+import { useNavigate } from "react-router-dom";
 
 function SignUp(props) {
   const [user, setUser] = useState("");
   const [pass, setPass] = useState("");
   const [email, setEmail] = useState("");
   const [showPopover, setShowPopover] = useState(false);
+  const navigate = useNavigate();
 
   // a basic function to check id there an empty input field
   function auth() {
     if (user === "" || pass === "" || email === "") {
       setShowPopover(true); // Show popover if fields are not filled
     } else {
+      // Assuming successful authentication (replace with your logic)
+      console.log("Authentication successful!");
+
+      // Navigate to the desired page after successful authentication
+      navigate("../Home/Home"); // Replace "/home" with your target route
     }
   }
 
