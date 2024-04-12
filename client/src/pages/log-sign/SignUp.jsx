@@ -8,7 +8,7 @@ function SignUp(props) {
   const [pass, setPass] = useState("");
   const [email, setEmail] = useState("");
   const [showPopover, setShowPopover] = useState(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   // a basic function to check id there an empty input field
   function auth() {
@@ -16,10 +16,10 @@ function SignUp(props) {
       setShowPopover(true); // Show popover if fields are not filled
     } else {
       // Assuming successful authentication (replace with your logic)
-      console.log("Authentication successful!");
-
+      // console.log("Authentication successful!");
       // Navigate to the desired page after successful authentication
-      navigate("../Home/Home"); // Replace "/home" with your target route
+      // navigate("../Home/Home");
+      // Replace "/home" with your target route
     }
   }
 
