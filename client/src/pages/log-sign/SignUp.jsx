@@ -15,6 +15,11 @@ function SignUp(props) {
     if (user === "" || pass === "" || email === "") {
       setShowPopover(true); // Show popover if fields are not filled
     } else {
+      // Assuming successful authentication (replace with your logic)
+      // console.log("Authentication successful!");
+      // Navigate to the desired page after successful authentication
+      // navigate("../Home/Home");
+      // Replace "/home" with your target route
     }
   }
 
