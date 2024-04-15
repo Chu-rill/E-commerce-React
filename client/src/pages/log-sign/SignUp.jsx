@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "../../components/ui/button";
 import SignError from "../../components/ui/SignError";
-import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 function SignUp(props) {
   const [user, setUser] = useState("");
@@ -18,7 +18,7 @@ function SignUp(props) {
       // Assuming successful authentication (replace with your logic)
       // console.log("Authentication successful!");
       // Navigate to the desired page after successful authentication
-      // navigate("../Home/Home");
+      Navigate("/Home");
       // Replace "/home" with your target route
     }
   }
